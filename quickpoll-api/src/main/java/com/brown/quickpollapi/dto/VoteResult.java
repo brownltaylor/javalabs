@@ -1,11 +1,15 @@
 package com.brown.quickpollapi.dto;
 
+import com.brown.quickpollapi.domain.Vote;
+
 import java.util.Collection;
 
 public class VoteResult {
 
     private int totalVotes;
     private Collection<OptionCount> results;
+
+
 
     public int getTotalVotes() {
         return totalVotes;

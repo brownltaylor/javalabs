@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface VoteRepository extends CrudRepository<Vote, Long> {
 
 
-    @Query(value = "select v.* from Option o, Vote v where o.Poll_ID = ?1 and v.Option_ID = o.OPTION_ID", nativeQuery = true)
+    @Query(value = "select v.* from Option o, Vote v where o.Poll_ID = ?1 and v.OPTION_ID = o.OPTION_ID", nativeQuery = true)
     public Iterable<Vote> findByPoll(Long pollId);
 
 }

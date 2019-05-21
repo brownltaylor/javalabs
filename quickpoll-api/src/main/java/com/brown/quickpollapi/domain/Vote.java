@@ -14,7 +14,6 @@ public class Vote {
     @JoinColumn(name= "OPTION_ID")
     private Option option;
 
-
     public Long getId() {
         return id;
     }
