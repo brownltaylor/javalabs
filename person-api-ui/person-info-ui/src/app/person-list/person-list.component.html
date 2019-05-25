@@ -1,0 +1,47 @@
+
+
+<div *ngFor= "let person of people">
+  <table width="100%">
+    
+     
+      <thead>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Phone</th>
+       <th>Website</th> 
+        <th>Company</th>
+      </thead>
+      <tr>
+      <td>{{ person.name }}<br></td>
+     
+    <td>{{ person.username }}</td>
+    
+      <td style="font-size: 12px">{{ person.email }}</td>
+      
+      <td>
+        <strong>Suite:</strong>{{ person.address.suite}}<br>
+        <strong>Street:</strong>{{ person.address.street }}<br>
+        <strong>City:</strong>{{ person.address.city }}<br>
+        <strong>ZipCode:</strong>{{ person.address.zipcode }}<br>
+        <strong>Lat:</strong> {{ person.address.geo.lat}}<br>
+        <strong>Long:</strong>{{ person.address.geo.lng }}
+      </td>
+    
+      <td> {{ person.phone }}</td>
+      
+      <td> {{person.website }}</td>
+  
+      <td style= "font-size: 14px">
+        <strong>Name:</strong>{{ person.company.name }}<br>
+        <strong>Catchphrase:</strong><i>{{ person.company.catchPhrase }}</i><br>
+        <strong>Service:</strong><i>{{ person.company.bs }}</i>
+      </td>
+
+  
+    </tr>
+  </table>
+
+
+  </div>

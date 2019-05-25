@@ -1,0 +1,17 @@
+table, thead, td { 
+    border: 1px solid black; 
+    border-collapse: collapse;
+    table-layout: fixed; 
+}
+
+thead{ 
+
+font-weight: bold; 
+background-color: yellow;
+
+}
+td{
+    width: 150px; 
+    height: 200px; 
+    text-align: center;
+}
