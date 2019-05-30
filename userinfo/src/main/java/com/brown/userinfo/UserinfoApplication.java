@@ -22,21 +22,5 @@ public class UserinfoApplication {
 
 
 
-@Bean
-CommandLineRunner run(UserService userService) {
-	return args -> {
-		ObjectMapper map = new ObjectMapper();
-		TypeReference<List<UserInfo>> typeReference = new TypeReference<List<UserInfo>>() {
-		};
-		InputStream inputStream = TypeReference.class.getResourceAsStream("/json/users.json");
-		try {
-			List<UserInfo> users = map.readValue(inputStream, typeReference);
-			userService.save(users);
-			System.out.println("Users Saved!");
-		} catch (IOException e) {
-			System.out.println("Unable to save users: " + e.getMessage());
-		}
-	};
-}
 }
 

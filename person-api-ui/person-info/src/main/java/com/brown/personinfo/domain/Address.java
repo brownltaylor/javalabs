@@ -31,6 +31,15 @@ public class Address {
 
     }
 
+    public Address(Long id, String suite, String street, String city, String zipcode, Geo geo){
+        this.id = id;
+        this.suite = suite;
+        this.street = street;
+        this.city = city;
+        this.zipcode = zipcode;
+        this.geo = geo;
+    }
+
     public Long getId() {
         return id;
     }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { PersonService } from '../person.service'; 
+import { PersonService } from '../person.service';
+import { Person } from 'src/app/person';
+
 @Component({
   selector: 'app-person-list',
   templateUrl: './person-list.component.html',
@@ -7,7 +9,8 @@ import { PersonService } from '../person.service';
 })
 export class PersonListComponent implements OnInit {
 
-  people: Array<any>; 
+  people: Array<Person>; 
+ 
 
   constructor(private personService: PersonService) { }
 
@@ -18,5 +21,7 @@ export class PersonListComponent implements OnInit {
       this.people = data; 
     });
   }
+
+
 
 }

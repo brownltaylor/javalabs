@@ -16,27 +16,30 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
+@RequestMapping("/api")
+@CrossOrigin("http://localhost:4200")
 public class PersonController {
 
     @Autowired
     private PersonService personService;
 
 
-    @RequestMapping(value = "/people", method = RequestMethod.GET)
-    @CrossOrigin(origins="http://localhost:4200")
+
+    @GetMapping(value = "/people")
     public Iterable<Person> getAllRecords() {
         Iterable<Person> people = personService.getAll();
         return people;
     }
 
-    @RequestMapping(value = "/people/{id}", method = RequestMethod.GET)
+    @GetMapping(value = "/people/{id}")
     public ResponseEntity<?> getPersonRecord(@PathVariable Long id) {
         Optional<Person> person = personService.getOne(id);
         return new ResponseEntity<>(person, HttpStatus.OK);
 
     }
 
-    @RequestMapping(value = "/people/createRecord", method = RequestMethod.POST)
+
+    @PostMapping(value = "/people/createRecord")
     public ResponseEntity<?> createPersonRecord(@RequestBody Person person) {
         personService.create(person);
         HttpHeaders responseHeaders = new HttpHeaders();
@@ -50,21 +53,21 @@ public class PersonController {
         return new ResponseEntity<>(null, HttpStatus.CREATED);
     }
 
-    @RequestMapping(value = "/people/{id}", method = RequestMethod.DELETE)
+    @DeleteMapping(value = "/people/{id}")
     public ResponseEntity<?> deleteRecord(@PathVariable Long id) {
         personService.delete(id);
         return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
 
-    @RequestMapping(value = "/people/{id}", method = RequestMethod.PUT)
+    @PutMapping(value = "/people/{id}")
     public ResponseEntity<?> updateRecord(@PathVariable Long id, @RequestBody Person person) {
         personService.update(person);
         return new ResponseEntity<>(person, HttpStatus.CREATED);
 
     }
 
-    @RequestMapping(value="/people/createRecords", method= RequestMethod.POST)
+    @PostMapping(value="/people/createRecords")
     public ResponseEntity<?> createAllRecords(@RequestBody Iterable<Person> people){
         personService.createAll(people);
 

@@ -1,11 +1,15 @@
 package com.brown.personinfo.domain;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 import javax.persistence.*;
 
 @Entity
+@CrossOrigin(origins="http://localhost:4200")
 public class Person {
 
     @Id
+    @GeneratedValue
     @Column(name= "PERSON_ID")
     private Long id;
 
@@ -35,6 +39,16 @@ public class Person {
 
     public Person(){
 
+    }
+
+    public Person(Long id, String name, String username, String phone, String website, Company company, Address address){
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.website = website;
+        this.username = username;
+        this.company = company;
+        this.address = address;
     }
 
     public Long getId() {

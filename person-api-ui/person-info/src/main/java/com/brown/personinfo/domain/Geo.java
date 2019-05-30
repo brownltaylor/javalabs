@@ -1,9 +1,12 @@
 package com.brown.personinfo.domain;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 import javax.persistence.*;
 
 
 @Entity
+@CrossOrigin(origins="http://localhost:4200")
 public class Geo {
 
     @Id
@@ -17,10 +20,14 @@ public class Geo {
     @Column(name="GEO_LNG")
     private Double lng;
 
-
-
     public Geo(){
 
+    }
+
+    public Geo(Long id, Double lat, Double lng){
+        this.id = id;
+        this.lat = lat;
+        this.lng = lng;
     }
 
     public Double getLat() {

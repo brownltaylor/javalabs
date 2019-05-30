@@ -1,9 +1,21 @@
+<!-- 
+<mat-card>
+  <mat-card-title> Person List </mat-card-title>
+    <mat-card-content>
+      <mat-list>
 
+<mat-list-item *ngFor= "let person of people">
+  
+  <h3 mat-line>
+  <a mat-button [routerLink]= "['/person-form', person.id]">{{person.name}}</a>
+</h3>
+  </mat-list-item>
+  </mat-list>
+  </mat-card-content>
 
-<div *ngFor= "let person of people">
-  <table width="100%">
-    
-     
+  <button mat-fab color="primary" [routerLink]="['/person-add']"> Add </button>
+  </mat-card> -->
+  <table width="100%" >
       <thead>
         <th>Name</th>
         <th>Username</th>
@@ -13,8 +25,8 @@
        <th>Website</th> 
         <th>Company</th>
       </thead>
-      <tr>
-      <td>{{ person.name }}<br></td>
+      <tr *ngFor = "let person of people">
+     <td > <a mat-button [routerLink]= "['/person-edit', person.id]">{{ person.name }}</a><br> </td>
      
     <td>{{ person.username }}</td>
     
@@ -43,5 +55,10 @@
     </tr>
   </table>
 
+  <button [routerLink]="['/person-add']">Add</button>
 
-  </div>
+
+
+
+
+  

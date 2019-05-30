@@ -1,8 +1,11 @@
 package com.brown.personinfo.domain;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
 import javax.persistence.*;
 
 @Entity
+@CrossOrigin(origins="http://localhost:4200")
 public class Company {
 
     @Id
@@ -22,6 +25,13 @@ public class Company {
 
     public Company(){
 
+    }
+
+    public Company(Long id, String name, String catchPhrase, String bs){
+        this.id = id;
+        this.name = name;
+        this.catchPhrase = catchPhrase;
+        this.bs = bs;
     }
 
     public String getName() {

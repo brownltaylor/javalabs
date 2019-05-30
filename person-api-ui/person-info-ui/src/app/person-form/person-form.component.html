@@ -1,0 +1,81 @@
+<mat-card>
+    <form #personForm="ngForm" (ngSubmit)= "save()">
+      <mat-card-header>
+        <mat-card-title><h2>{{person.name ? 'Edit' : 'Add'}} Person</h2></mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <input type="hidden" name="id" [(ngModel)]="person.id">
+        <mat-form-field>
+          Name: <input matInput [(ngModel)]="person.name"
+                 required name="name" #name>
+        </mat-form-field>
+        <mat-form-field> 
+           Username:  <input matInput [(ngModel)]="person.username"
+            required name="username" #username>
+            </mat-form-field>
+            <mat-form-field>
+                Email: <input matInput [(ngModel)]="person.email"
+                required name="email" #email>
+            </mat-form-field>
+            <mat-form-field>
+                Phone: <input matInput [(ngModel)]="person.phone"
+                required name="phone" #phone>
+            </mat-form-field>
+            <mat-form-field>
+                Website: <input matInput [(ngModel)]="person.website"
+                required name="website" #website>
+            </mat-form-field>
+            <input type="hidden" name="address_id" [(ngModel)]="person.address.id">
+            <mat-form-field>
+                Suite: <input matInput [(ngModel)]="person.address.suite"
+                required name="suite" #suite>
+            </mat-form-field>
+            <mat-form-field>
+                Street: <input matInput [(ngModel)]="person.address.street"
+                required name="street" #street>
+            </mat-form-field>
+            <mat-form-field>
+                City: <input matInput [(ngModel)]="person.address.city"
+                required name="city" #city>
+            </mat-form-field>
+            <mat-form-field>
+                Zipcode: <input matInput [(ngModel)]="person.address.zipcode"
+                required name="zipcode" #zipcode>
+            </mat-form-field>
+            <input type="hidden" name="geo_id" [(ngModel)]="person.address.geo.id">
+            <mat-form-field>
+                Latitude <input matInput [(ngModel)]="person.address.geo.lat"
+                required name="lat" #lat>
+            </mat-form-field>
+            <mat-form-field>
+                Longitude: <input matInput [(ngModel)]="person.address.geo.lng"
+                required name="lng" #lng>
+            </mat-form-field>
+            <input type="hidden" name="company_id" [(ngModel)]="person.company.id">
+            <mat-form-field>
+                Company Name: <input matInput [(ngModel)]="person.company.name"
+                required name="companyName" #companyName>
+            </mat-form-field>
+            <mat-form-field>
+                Company Catchphrase: <input matInput [(ngModel)]="person.company.catchPhrase"
+                required name="catchPhrase" #catchPhrase>
+            </mat-form-field>
+            <mat-form-field>
+                Company BS: <input matInput [(ngModel)]="person.company.bs"
+                required name="bs" #bs>
+            </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit"
+                [disabled]="!personForm.form.valid" >Save</button>
+        <button mat-raised-button color="secondary" (click)="remove()"
+                *ngIf="person.id" type="button">Delete</button>
+        <a mat-button routerLink="/person-list">Cancel</a>
+      </mat-card-actions>
+      <mat-card-footer>
+        <div class="giphy">
+          <img src="{{person.giphyUrl}}" alt="{{person.name}}">
+        </div>
+      </mat-card-footer>
+    </form>
+  </mat-card>
