@@ -9,14 +9,14 @@
       </div>
 
       <div>
-            <table width="100%" >
+            <table width="100%">
                 <title>Withdrawals</title>
                 <thead>
                   <th>Description</th>
                   <th></th>
                   <th>Amount</th>
                 </thead>
-                <tr *ngFor = "let withdrawal of Withdrawals">
+                <tr *ngFor = "let withdrawal of withdrawals">
                <td >{{ withdrawal.description }}<br> </td>
                
               <td>{{ withdrawal.amount}}</td>
