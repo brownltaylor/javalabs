@@ -1,0 +1,36 @@
+<div> 
+  <ul>
+    <li>{{ customer.first_name }} {{ customer.last_name }}</li>
+    
+  </ul>
+</div>
+
+<div>
+<table width="100%" >
+    <thead>
+      <th>View</th>
+      <th>Nickname</th>
+      <th>Balance</th>
+      <th>Type</th>
+      <th>Rewards</th>
+      <th>Edit</th>
+    </thead>
+    <tr *ngFor = "let account of accounts">
+   <td ><a mat-button [routerLink] = "['/account-details', account.account_id]">View Account {{account.account_id}}</a><br> </td>
+   
+  <td>{{ account.nickname}}</td>
+  
+    <td style="font-size: 12px">{{ account.balance }}</td>
+    
+ 
+    <td> {{ account.type }}</td>
+    
+    <td> {{account.rewards }}</td>
+    <td><button [routerLink]= "['/account-edit', account.account_id]">Edit</button></td>
+
+  </tr>
+</table>
+
+<button [routerLink]="['/account-signup', customer.customer_id]">Add</button>
+
+</div>

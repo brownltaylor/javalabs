@@ -1,0 +1,74 @@
+<div> 
+        <ul>
+          <li>{{ account.nickname }} </li>
+          <li>{{ account.balance }}</li>
+          <li> {{ account.type }}</li>
+          <li> {{ account.rewards }}</li>
+          
+        </ul>
+      </div>
+
+      <div>
+            <table width="100%" >
+                <title>Withdrawals</title>
+                <thead>
+                  <th>Description</th>
+                  <th></th>
+                  <th>Amount</th>
+                </thead>
+                <tr *ngFor = "let withdrawal of Withdrawals">
+               <td >{{ withdrawal.description }}<br> </td>
+               
+              <td>{{ withdrawal.amount}}</td>
+            
+            
+              </tr>
+            </table>
+            
+            <button [routerLink]="['/create-withdrawal', account.account_id]">Withdrawal Funds</button>
+            
+            </div>
+
+      <div>
+            <table width="100%" >
+                <title>Deposits</title>
+                <thead>
+                  <th>Description</th>
+                  <th></th>
+                  <th>Amount</th>
+                </thead>
+                <tr *ngFor = "let deposit of deposits">
+               <td *ngIf>{{ deposit.description }}<br> </td>
+               
+              <td >{{ deposit.amount}}</td>
+            
+            
+              </tr>
+            </table>
+            
+            <button [routerLink]="['/create-deposit', account.account_id]">Deposit Funds</button>
+            
+            </div>
+
+            <div>
+                    <table width="100%" >
+                        <title>Bills</title>
+                        <thead>
+                          <th>Description</th>
+                          <th></th>
+                          <th>Amount</th>
+                        </thead>
+                        <tr *ngFor = "let bill of bills">
+                       <td > {{ bill.description }}<br> </td>
+                       
+                      <td>{{ bill.amount}}</td>
+                    
+                    
+                      </tr>
+                    </table>
+                    
+                    <button [routerLink]="['/create-bill', account.account_id]">Create Bill</button>
+
+                    <button [routerLink] = "['/profile', account.customer_id]">Back To Profile</button>
+                    
+                    </div>

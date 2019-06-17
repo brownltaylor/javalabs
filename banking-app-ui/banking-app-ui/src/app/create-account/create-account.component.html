@@ -1,0 +1,33 @@
+
+<h2>{{account.account_id ? 'Edit' : 'Open' }} Account! </h2>
+  <form #accountForm= "ngForm" (ngSubmit)="createAccount()"> 
+    
+  
+
+ 
+  Type 
+  <input  [(ngModel)]= "account.type"  required name="type" #type>
+  
+  
+  <br> <br>
+    Nickname 
+    <input  [(ngModel)]= "account.nickname" required name="nickname" #nickname>
+  
+  
+  <br> <br>
+    How much do you want to start your account with?
+    <input [(ngModel)]= "account.balance" required name="balance" #balance>
+  
+    <br> <br>
+
+    
+      <button mat-raised-button color="primary" type="submit" [disabled]="!accountForm.form.valid" >Submit</button>
+    
+    <button mat-raised-button color="primary" (click)="deleteAccount()"
+                *ngIf="account.account_id" type="button">Delete</button>
+    
+      <button mat-raised-button (click)= "goToProfile()"> Cancel</button>
+    
+ 
+ 
+  </form>

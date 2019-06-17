@@ -1,0 +1,48 @@
+<div> 
+    <form #billForm= "ngForm" (ngSubmit)="createBill()"> 
+        <title>{{bill.bill_id ? 'Edit' : 'Create' }} Bill </title>
+       
+        <div>
+        <label> Nickname </label>
+        <input [(ngModel)]= "bill.nickname"  required name="nickname" #nickname/>
+        </div>
+        <div>
+            <label> Status </label>
+            <input [(ngModel)]= "bill.status"  required name="status" #status/>
+            </div>
+        
+        <div>
+          <label> Payee </label>
+          <input [(ngModel)]= "bill.payee" required name="payee" #payee/>
+        </div>
+        
+        <div>
+          <label> Today's Date</label>
+          <input [(ngModel)]= "bill.creation_date" required name="creation_date" #creation_date/>
+        </div>
+        
+        <div>
+            <label> Payment Amount</label>
+            <input [(ngModel)]= "bill.payment_amount" required name="payment_amount" #payment_amount/>
+          </div>
+          <div>
+              <label> When do you want to debit this bill from your account?</label>
+              <input [(ngModel)]= "bill.payment_date" required name="payment_date" #payment_date/>
+            </div>
+
+          <div>
+            <button type="submit" [disabled]="!accountForm.form.valid" >Submit</button>
+          </div>
+
+          <div>
+            <button *ngIf= "bill.bill_id" (click) = "deleteBill()">Delete</button>
+          </div>
+        
+         
+        
+        </form>
+        <div>
+            <button (click)= "goToDetails()" > Cancel</button>
+          </div>
+        
+</div>

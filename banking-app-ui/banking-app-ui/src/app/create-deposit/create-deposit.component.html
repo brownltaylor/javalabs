@@ -1,0 +1,47 @@
+<div> 
+    <form #depositForm= "ngForm" (ngSubmit)="createDeposit()"> 
+        <title>{{ deposit.deposit_id ? 'Edit' : 'Create'}} Deposit </title>
+       
+        <div>
+        <label> Type</label>
+        <input [(ngModel)]= "deposit.type"  required name="type" #type/>
+        </div>
+        <div>
+            <label> Status </label>
+            <input [(ngModel)]= "deposit.status"  required name="status" #status/>
+            </div>
+        
+        <div>
+          <label> Transaction Date </label>
+          <input [(ngModel)]= "deposit.transaction_date" required name="transaction_date" #transactionDate/>
+        </div>
+        
+        <div>
+          <label> Medium</label>
+          <input [(ngModel)]= "deposit.medium" required name="medium" #medium/>
+        </div>
+        
+        <div>
+            <label>Amount</label>
+            <input [(ngModel)]= "deposit.amount" required name="amount" #amount/>
+          </div>
+          <div>
+              <label>Description</label>
+              <input [(ngModel)]= "deposit.description" required name="description" #description/>
+            </div>
+
+          <div>
+            <button type="submit" [disabled]="!depositForm.form.valid" >Submit</button>
+          </div>
+    <div>
+      <button *ngIf = "deposit.deposit_id" (click)= "deleteDeposit()">Delete</button>
+    </div>
+         
+        
+        </form>
+        <div>
+            <button (click)= "goToDetails()" > Cancel</button>
+          </div>
+        
+</div>
+
