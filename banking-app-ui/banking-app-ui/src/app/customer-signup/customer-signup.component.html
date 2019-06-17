@@ -1,0 +1,55 @@
+<form #customerForm= "ngForm" (ngSubmit)="createCustomer()"> 
+<title> {{ customer.id ? 'Sign-Up' : 'Edit Your Profile' }} </title>
+
+<div>
+  <label>Create a Unique Identifier</label> 
+  <input [(ngModel)]= "customer.customer_id" required name="customer_id" #id/>
+</div>
+
+<div>
+<label> First Name </label>
+<input [(ngModel)]= "customer.first_name"  required name="first_name" #firstName/>
+</div>
+
+<div>
+  <label> Last Name </label>
+  <input [(ngModel)]= "customer.last_name" required name="last_name" #lastName/>
+</div>
+
+<div>
+  <label> Street Number </label>
+  <input [(ngModel)]= "customer.addresses.street_number" required name="street_number" #streetNumber/>
+</div>
+
+<div> 
+  <label> Street Name </label>
+  <input [(ngModel)]= "customer.addresses.street_name" required name="street_name" #streetName/>
+  </div>
+
+  <div>
+    <label>
+      City
+    </label>
+<input [(ngModel)]= "customer.addresses.city" required name="city" #city/>
+  </div>
+
+  <div>
+    <label> State </label>
+    <input [(ngModel)]= "customer.addresses.state" required name="state" #state/>
+  </div>
+
+  <div>
+    <label> Zip </label>
+    <input [(ngModel)]= "customer.addresses.zip" required name="zip" #zip/>
+  </div>
+
+  <div>
+      <button type="submit" [disabled]="!customerForm.form.valid" >Submit</button>
+  </div>
+
+  <div>
+    <a  routerLink = "/customer-list" > Cancel</a>
+  </div>
+
+
+</form>

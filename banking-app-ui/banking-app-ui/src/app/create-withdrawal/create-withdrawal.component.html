@@ -1,0 +1,48 @@
+<div> 
+    <form #withdrawalForm= "ngForm" (ngSubmit)="createWithdrawal()"> 
+        <title>{{ withdrawal.withdrawal_id ? 'Edit' : 'Create'}} Withdrawal </title>
+       
+        <div>
+        <label> Type</label>
+        <input [(ngModel)]= "withdrawal.type"  required name="type" #type/>
+        </div>
+        <div>
+            <label> Status </label>
+            <input [(ngModel)]= "withdrawal.status"  required name="status" #status/>
+            </div>
+        
+        <div>
+          <label> Transaction Date </label>
+          <input [(ngModel)]= "withdrawal.transaction_date" required name="transaction_date" #transactionDate/>
+        </div>
+        
+        <div>
+          <label> Medium</label>
+          <input [(ngModel)]= "withdrawal.medium" required name="medium" #medium/>
+        </div>
+        
+        <div>
+            <label>Amount</label>
+            <input [(ngModel)]= "withdrawal.amount" required name="amount" #amount/>
+          </div>
+          <div>
+              <label>Description</label>
+              <input [(ngModel)]= "withdrawal.description" required name="description" #description/>
+            </div>
+
+          <div>
+            <button type="submit" [disabled]="!withdrawalForm.form.valid" >Submit</button>
+          </div>
+        
+          <div>
+            <button *ngIf= "withdrawal.withdrawal_id" (click)= "deleteWithdrawal()">Delete</button>
+          </div>
+         
+        
+        </form>
+        <div>
+            <button (click)= "goToDetails()" > Cancel</button>
+          </div>
+        
+</div>
+

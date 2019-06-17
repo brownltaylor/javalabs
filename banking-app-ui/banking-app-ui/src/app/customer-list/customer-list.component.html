@@ -1,0 +1,3 @@
+<ul *ngFor= "let customer of customers">
+<li> <a mat-button [routerLink] = "['/profile', customer.customer_id]"> {{ customer.first_name | uppercase }} {{customer.last_name | uppercase }}</a></li>
+</ul>
