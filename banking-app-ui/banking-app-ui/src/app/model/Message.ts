@@ -5,8 +5,4 @@ export class Message{
     message: string; 
     data: Object; 
 
-    getData(){ 
-        return this.data; 
-    }
-    
 }

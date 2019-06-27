@@ -11,14 +11,15 @@ import { FormsModule } from '@angular/forms';
 import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 import { PersonService } from './person.service';
-import { PersonDetailsComponent } from './person-details/person-details.component';
+import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonListComponent,
     PersonFormComponent,
-    PersonDetailsComponent
+    CustomerProfileComponent
   ],
   imports: [
     BrowserModule,

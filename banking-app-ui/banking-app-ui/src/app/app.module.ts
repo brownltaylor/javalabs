@@ -18,7 +18,6 @@ import { DepositService } from './deposit.service';
 import { BillService } from './bill.service';
 import { FormsModule } from '@angular/forms';
 import { CustomerListComponent } from './customer-list/customer-list.component';
-import { MatButtonModule, MatCardModule, MatInputModule, MatListModule, MatToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -39,11 +38,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule, 
     HttpClientModule,
     FormsModule,
-    MatButtonModule, 
-    MatInputModule, 
-    MatCardModule, 
-    MatListModule, 
-    MatToolbarModule,
     BrowserAnimationsModule
   ],
   providers: [CustomerService, AccountService, WithdrawalService, DepositService, BillService],

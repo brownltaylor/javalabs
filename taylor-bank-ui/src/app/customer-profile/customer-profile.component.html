@@ -1,0 +1,17 @@
+<table>
+  <thead> 
+    <th> Name </th>
+    <th> Address </th>
+  </thead>
+  <tr>
+    <td> {{ customer.first_name + ' ' + customer.last_name }}</td>
+    <td> 
+      Suite: {{ customer.address.street_number }} <br>
+    Street: {{ customer.address.street_name }} 
+  City: {{ customer.address.city }} 
+State: {{ customer.address.state }} 
+Zip: {{ customer.address.zip }} </td>
+  </tr>
+
+
+</table>
