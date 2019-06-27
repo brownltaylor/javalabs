@@ -2,37 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e26ff753-f305-494d-906a-d827d772680e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/websitefactory/pages/AboutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EmployeeGroupProject" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeGroupProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/animalfactory/AnimalFactoryDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/animalfactory/AnimalFactoryDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaJuvenilesBankApp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaJuvenilesBankAppUI" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Maven.ExceptionalPhoneNumbers" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven.ExceptionalPhoneNumbers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/error/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/error/ResourceNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Bill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Deposit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Withdrawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Withdrawl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/privateControllers/BankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/privateControllers/BankController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/publicControllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/publicControllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/BillRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/DepositRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/DepositRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/WithdrawlRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/WithdrawlRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/BillService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/DepositService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/DepositService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/WithdrawlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/WithdrawlService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/src/app/model/Message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/src/app/model/Message.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-details/person-details.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-details/person-details.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-details/person-details.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-details/person-details.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-form/person-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-form/person-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../quickpoll-api/src/main/java/com/brown/quickpollapi/controller/PollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quickpoll-api/src/main/java/com/brown/quickpollapi/controller/PollController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamGfunkApp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TeamGfunkApp - Copy" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/AnimalFactoryDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="119">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -309,7 +285,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561609959597" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561609962183" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -690,8 +666,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/AnimalFactoryDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="119">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
