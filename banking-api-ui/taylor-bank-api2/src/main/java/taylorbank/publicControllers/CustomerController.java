@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import taylorbank.error.ResourceNotFoundException;
 import taylorbank.models.*;
 import taylorbank.services.*;
 
@@ -11,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/api/customers")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CustomerController {
 
     @Autowired
@@ -25,27 +27,27 @@ public class CustomerController {
     private DepositService depositService;
 
     @PostMapping(value = "/createCustomer")
-    public ResponseEntity<?> createCustomer(@RequestBody Customer customer){
+    public void createCustomer(@RequestBody Customer customer) {
         customerService.createCustomer(customer);
-        return new ResponseEntity<>(null, HttpStatus.CREATED);
-    }
+        Optional<Customer> targetCustomer = customerService.getCustomer(customer.getCustomer_id());
+        if(!targetCustomer.isPresent())
+            throw new ResourceNotFoundException("error creating customer");
 
+    }
     @PutMapping(value= "/{customerId}")
     public ResponseEntity<?> updateCustomer(@PathVariable Long customerId, @RequestBody Customer customer){
         customerService.updateCustomer(customer);
         return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
-//    @GetMapping(value = "/all")
-//    public ResponseEntity<?> showAllCustomers(){
-//        Iterable<Customer> customers = customerService.getAllCustomers();
-//        return new ResponseEntity<>(customers, HttpStatus.OK);
-//    }
 
     @GetMapping(value= "/{customerId}")
-    public ResponseEntity<?> findCustomer(@PathVariable Long customer_id){
+    public Optional<Customer> findCustomer(@PathVariable("customerId") Long customer_id){
         Optional<Customer> customer = customerService.getCustomer(customer_id);
-        return new ResponseEntity<>(customer, HttpStatus.OK);
+        if(!customer.isPresent())
+            throw new ResourceNotFoundException("error fetching customer");
+
+        return customer;
     }
 
     /*TODO: This is where the bills endpoints will begin" */
@@ -55,30 +57,40 @@ public class CustomerController {
         Iterable<Bill> customer_bills = customerService.getBillsByCustomer(customer_id);
         return new ResponseEntity<>(customer_bills, HttpStatus.OK);
     }
-    @PostMapping(value = "/{customerId}/accounts/{accountId}/")
+
+    @GetMapping(value = "/{customerId}/bills/{billId}")
+    public ResponseEntity<?> getBillById(Long bill_id){
+        Optional<Bill> bill = billService.getBillById(bill_id);
+        return new ResponseEntity<>(bill, HttpStatus.OK);
+    }
+
+    @PostMapping(value = "/{customerId}/accounts/{accountId}/createBill")
     public ResponseEntity<?> createBill(@PathVariable("customerId") Long customer_id, @PathVariable("accountId") Long account_id, @RequestBody Bill bill){
         billService.createBill(account_id, bill);
         return new ResponseEntity<>(null, HttpStatus.CREATED);
     }
 
-    @PutMapping(value= "/{customerId}/accounts/{accountId}/bills/{billId}")
-    public ResponseEntity<?> updateBill(@PathVariable("customerId") Long customer_id, @PathVariable("accountId") Long account_id, @PathVariable("billId") Long bill_id, Bill bill){
-        billService.updateBill(bill);
-        return new ResponseEntity<>(null, HttpStatus.OK);
-    }
 
-    @DeleteMapping(value="/{customerId}/accounts/{accountId}/bills/{billId}")
-    public ResponseEntity<?> deleteBill(@PathVariable("customerId") Long customer_id, @PathVariable("accountId") Long account_id, @PathVariable("billId") Long bill_id){
-        billService.deleteBill(bill_id);
-        return new ResponseEntity<>(null, HttpStatus.OK);
-    }
 
-    /* TODO: This is where the account endpoints will begin" */
+    /*TODO: This is where the account endpoints will begin*/
+
 
     @GetMapping(value = ("/{customerId}/accounts"))
     public ResponseEntity<?> getAccountsByCustomer(@PathVariable Long customer_id){
         Iterable<Account> accounts = customerService.getAccountsByCustomer(customer_id);
         return new ResponseEntity<>(accounts, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/{customerId}/accounts/{accountId}")
+    public ResponseEntity<?> getAccountById(@PathVariable("customerId") Long customer_id, @PathVariable("accountId") Long account_id){
+        Optional<Account> account = accountService.getAccountById(account_id);
+        return new ResponseEntity<>(account, HttpStatus.OK);
+    }
+
+    @GetMapping(value = "/{customerId}/accounts/{accountId}/bills")
+    public ResponseEntity<?> getBillsByAccount(@PathVariable("customerId") Long customer_id, @PathVariable("accountId") Long account_id){
+        Iterable<Bill> bills = accountService.getBillsByAccount(account_id);
+        return new ResponseEntity(bills, HttpStatus.OK);
     }
 
     @PostMapping(value = "/{customerId}/accounts/createAccount")
@@ -92,6 +104,9 @@ public class CustomerController {
         accountService.updateAccount(account);
         return new ResponseEntity<>(null, HttpStatus.OK);
     }
+
+
+
 
     /* TODO: This is where the deposit endpoints will begin */
 
@@ -114,18 +129,12 @@ public class CustomerController {
 
     }
 
-    @PutMapping(value = "/{customerId}/accounts/{accountId}/deposits/{depositId}")
-    public ResponseEntity<?> updateDeposit(@PathVariable("customerId") Long customer_id, @PathVariable("accountId") Long account_id, @PathVariable("depositId") Long deposit_id, @RequestBody Deposit deposit){
-        depositService.updateDeposit(deposit);
-        return new ResponseEntity<>(null, HttpStatus.OK);
-    }
-
 
     /*TODO: This is where the withdrawl endpoints will begin*/
 
     @GetMapping(value= "/{customerId}/accounts/{accountId}/withdrawls")
     public ResponseEntity<?> getWithdrawlsByAccount(@PathVariable("customerId") Long customer_id, @PathVariable("accountId") Long account_id){
-       Iterable<Withdrawl> withdrawls =  accountService.getWithdrawlsByAccount(account_id);
+        Iterable<Withdrawl> withdrawls =  accountService.getWithdrawlsByAccount(account_id);
         return new ResponseEntity<>(withdrawls, HttpStatus.OK);
     }
 
@@ -139,12 +148,6 @@ public class CustomerController {
     public ResponseEntity<?> createWithdrawl(@PathVariable("customerId") Long customer_id, @PathVariable("accountId") Long account_id, @RequestBody Withdrawl withdrawl){
         withdrawlService.createWithdrawl(account_id, withdrawl);
         return new ResponseEntity<>(null, HttpStatus.CREATED);
-    }
-
-    @PutMapping(value = "/{customerId}/accounts/{accountId}/withdrawls/{withdrawlId}")
-    public ResponseEntity<?> updateDeposit(@PathVariable("customerId") Long customer_id, @PathVariable("accountId") Long account_id, @PathVariable("withdrawlId") Long withdrawl_id, @RequestBody Withdrawl withdrawl){
-        withdrawlService.updateWithdrawl(withdrawl);
-        return new ResponseEntity<>(null, HttpStatus.OK);
     }
 
 

@@ -14,7 +14,7 @@ import javax.validation.Valid;
 import java.net.URI;
 import java.util.Optional;
 
-
+@RequestMapping(value ="/accounts")
 @RestController
 public class PollController {
 

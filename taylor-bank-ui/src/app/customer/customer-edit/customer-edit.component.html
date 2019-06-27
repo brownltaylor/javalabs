@@ -1,0 +1,52 @@
+<mat-card>
+  <form #customerForm="ngForm">
+    <mat-card-header>
+      <mat-card-title><h2>Register for an Account!</h2></mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <input type="hidden" name="id" [(ngModel)]="customer.id">
+      <mat-form-field>
+        First Name: <input matInput [(ngModel)]="customer.first_name"
+               required name="first_name" #first_name>
+      </mat-form-field>
+          <mat-form-field> 
+              Last Name: <input matInput [(ngModel)]="customer.last_name"
+              required name="last_name" #last_name>
+          </mat-form-field>
+          <mat-form-field>
+            <label>Username:</label>
+            <input matInput [(ngModel)]= "customer.username" required name="username" #username>
+          </mat-form-field>
+          <mat-form-field>
+            <label>Password:</label>
+            <input matInput [(ngModel)]= "customer.password" required name="password" #password>
+          </mat-form-field>
+          <!-- <input type="hidden" name="address_id" [(ngModel)]="customer.address.id">
+          <mat-form-field>
+              Suite: <input matInput [(ngModel)]="customer.address.street_number"
+              required name="street_number" #street_number>
+          </mat-form-field>
+          <mat-form-field>
+              Street: <input matInput [(ngModel)]="customer.address.street_name"
+              required name="street_name" #street_name>
+          </mat-form-field>
+          <mat-form-field>
+              City: <input matInput [(ngModel)]="customer.address.city"
+              required name="city" #city>
+          </mat-form-field>
+          <mat-form-field>
+            <label>State: </label>
+            <input matInput [(ngModel)] = "customer.address.state" required name="state" #state>
+          </mat-form-field>
+          <mat-form-field>
+              Zipcode: <input matInput [(ngModel)]="customer.address.zip"
+              required name="zipcode" #zipcode>
+          </mat-form-field> -->
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit"
+              [disabled]="!customerForm.form.valid" (click) = "register()">Save</button>
+      <a mat-button routerLink="/home">Cancel</a>
+    </mat-card-actions>
+  </mat-card-content>
+  </form>
+</mat-card>

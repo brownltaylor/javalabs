@@ -13,7 +13,7 @@ import { NgForm } from '@angular/forms';
 })
 export class PersonFormComponent implements OnInit, OnDestroy{
 
-  person: Person = {id: 0, name: '', username: '', email: '', phone: '', website: '', address: {id: 0, street: '', suite: '', zipcode: '', city: '', geo: {id: 0, lat: 0, lng: 0}}, company: {id: 0, name: '', catchPhrase: '', bs: ''}}; 
+  person: Person = {id: '', name: '', username: '', email: '', phone: '', website: '', address: {id: 0, street: '', suite: '', zipcode: '', city: '', geo: {id: 0, lat: 0, lng: 0}}, company: {id: 0, name: '', catchPhrase: '', bs: ''}}; 
   sub: Subscription;
 
   constructor(private route: ActivatedRoute,
@@ -26,10 +26,7 @@ export class PersonFormComponent implements OnInit, OnDestroy{
       if(id){ 
         this.personService.get(id).subscribe((person: Person) => { 
           if (person) { 
-            this.person = person;
-            
-    
-             
+            this.person = person; 
           } else { 
             console.log(`Person with id '${id}' not found, returning to list`); 
             this.gotoList();

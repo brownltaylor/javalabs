@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e26ff753-f305-494d-906a-d827d772680e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/websitefactory/pages/AboutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven.ExceptionalPhoneNumbers" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven.ExceptionalPhoneNumbers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/error/ResourceNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/error/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Deposit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Deposit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Withdrawl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/models/Withdrawl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/privateControllers/BankController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/privateControllers/BankController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/publicControllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/publicControllers/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/BillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/DepositRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/DepositRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/WithdrawlRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/repository/WithdrawlRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/BillService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/BillService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/DepositService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/DepositService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/WithdrawlService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-api-ui/taylor-bank-api2/src/main/java/taylorbank/services/WithdrawlService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/src/app/model/Message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../banking-app-ui/banking-app-ui/src/app/model/Message.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-details/person-details.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-details/person-details.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-details/person-details.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-details/person-details.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-form/person-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../person-api-ui/person-info-ui/src/app/person-form/person-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../quickpoll-api/src/main/java/com/brown/quickpollapi/controller/PollController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../quickpoll-api/src/main/java/com/brown/quickpollapi/controller/PollController.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/factory/WebsiteFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/factory/AnimalFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="235">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/AnimalFactoryDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/animaltypes/Bird.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="20" column="18" selection-start-line="19" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/animaltypes/Dog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/animaltypes/Fish.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="164">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/abstractions/Animal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Eyes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding>
+                <element signature="e#164#165#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/FactoryDesignPatternApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/sitetypes/Blog.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/Page.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CartPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ContactPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/PostPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Website.java" />
+        <option value="$PROJECT_DIR$/src/main/java/AboutPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Blog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CommentPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ItemPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Shop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/SearchPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WebsiteFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sitetypes/Shop.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sitetypes/Blog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/abstractions/Website.java" />
+        <option value="$PROJECT_DIR$/src/main/java/abstractions/Page.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/CartPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/CommentPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/ContactPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/ItemPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/PostPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/SearchPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/AboutPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/factory/WebsiteFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/websitefactory/Blog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/abstractions/Attribute.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/attributes/Beak.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/attributes/Ears.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/attributes/Feathers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/attributes/Fur.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/attributes/Legs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/attributes/Nose.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/attributes/Tail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/attributes/Wings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/factory/AnimalFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FactoryDesignPatternApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/websitefactory/factory/WebsiteFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/abstractions/Animal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/attributes/Eyes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/animaltypes/Bird.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/animaltypes/Dog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/animaltypes/Fish.java" />
+        <option value="$PROJECT_DIR$/src/main/java/animalfactory/AnimalFactoryDemo.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1020" />
+    <option name="width" value="911" />
+    <option name="height" value="1091" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FactoryDesignPatternExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FactoryDesignPatternExample" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FactoryDesignPatternExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FactoryDesignPatternExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FactoryDesignPatternExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FactoryDesignPatternExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FactoryDesignPatternExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FactoryDesignPatternExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FactoryDesignPatternExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FactoryDesignPatternExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="animalfactory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FactoryDesignPatternExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FactoryDesignPatternExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="animalfactory" type="462c0819:PsiDirectoryNode" />
+              <item name="abstractions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FactoryDesignPatternExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FactoryDesignPatternExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="animalfactory" type="462c0819:PsiDirectoryNode" />
+              <item name="animaltypes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FactoryDesignPatternExample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FactoryDesignPatternExample" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="animalfactory" type="462c0819:PsiDirectoryNode" />
+              <item name="attributes" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561609959597" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.AnimalFactoryDemo">
+    <configuration name="AnimalFactoryDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="animalfactory.AnimalFactoryDemo" />
+      <module name="FactoryDesignPatternExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="animalfactory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FactoryDesignPatternApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="websitefactory.FactoryDesignPatternApplication" />
+      <module name="FactoryDesignPatternExample" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AnimalFactoryDemo" />
+        <item itemvalue="Application.FactoryDesignPatternApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e26ff753-f305-494d-906a-d827d772680e" name="Default Changelist" comment="" />
+      <created>1561603948153</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561603948153</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="680" y="0" width="607" height="727" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25776964" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.32941177" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sitetypes.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/pages/ContactPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#165#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/pages/ItemPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/pages/PostPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#124#125#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/pages/SearchPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#163#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/pages/AboutPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/pages/CartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/pages/CommentPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/abstractions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/sitetypes/Shop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/abstractions/Attribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Ears.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Beak.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Feathers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Fur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#192#193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Legs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Nose.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Tail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#163#164#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Wings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#196#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/abstractions/Page.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/abstractions/Website.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/sitetypes/Blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/factory/AnimalFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/factory/WebsiteFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websitefactory/FactoryDesignPatternApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/abstractions/Animal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/attributes/Eyes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#164#165#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/animaltypes/Bird.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="20" column="18" selection-start-line="19" selection-start-column="3" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/animaltypes/Dog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/animaltypes/Fish.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/animalfactory/AnimalFactoryDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FactoryDesignPatternExample</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
